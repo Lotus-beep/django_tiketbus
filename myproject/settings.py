@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-3_=8%hdzka^^7)n@f&nt!8h)=$k8$^=p1#cb3m2*f^-%9tha#s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['Lotusbeep.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -89,6 +89,8 @@ TEMPLATES = [
         },
     },
 ]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 WSGI_APPLICATION = 'myproject.wsgi.application'
 
