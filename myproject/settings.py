@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-3_=8%hdzka^^7)n@f&nt!8h)=$k8$^=p1#cb3m2*f^-%9tha#s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django_tiketbus-main-f0b12ec.kuberns.cloud']
 
 
 # Application definition
@@ -68,8 +68,9 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "https://django_tiketbus-main-f0b12ec.kuberns.cloud",
 ]
+
 
 CORS_ALLOW_CREDENTIALS = True
 
