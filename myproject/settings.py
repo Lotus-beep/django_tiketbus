@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
-from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -67,9 +65,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "https://django_tiketbus-main-f0b12ec.kuberns.cloud",
-]
+CORS_ALLOWED_ORIGINS = []
 
 
 CORS_ALLOW_CREDENTIALS = True
@@ -116,10 +112,6 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 #         'PORT': '5432',
 #     }
 # }
-
-DATABASES = {
-    'default': dj_database_url.config(default=config('DATABASE_URL'))
-}
 
 
 # Password validation
